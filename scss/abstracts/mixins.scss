@@ -5,7 +5,7 @@
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $home-image;
+      background: $show-home-image;
       background-attachment: fixed;
       background-size: cover;
 
@@ -20,5 +20,27 @@
         background: rgba($color-primary, $background-opacity);
       }
     }
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin large {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin XLarger {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
