@@ -1,9 +1,15 @@
 // widescreen
 @include XLarger {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // desktop & laptops
 @include large {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // tablets & small laptops
@@ -54,6 +60,10 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // smartphones
@@ -68,5 +78,9 @@
       margin-top: 1rem;
       font-size: 5rem;
     }
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
