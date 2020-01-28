@@ -198,7 +198,7 @@ a {
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 0.5rem 1.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
@@ -207,6 +207,10 @@ a {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+@media screen and (max-width: 500px) {
+  .boxes {
+    font-size: 1rem; } }
 
 header {
   position: fixed;
@@ -278,6 +282,6 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 2rem; }
   .projects {
     grid-template-columns: 1fr; } }
