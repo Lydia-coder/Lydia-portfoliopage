@@ -208,10 +208,6 @@ a {
       .boxes div:hover span {
         color: #000; }
 
-@media screen and (max-width: 500px) {
-  .boxes {
-    font-size: 1rem; } }
-
 header {
   position: fixed;
   z-index: 2;
@@ -284,4 +280,6 @@ main {
       margin-top: 1rem;
       font-size: 2rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes {
+    font-size: 1rem; } }
