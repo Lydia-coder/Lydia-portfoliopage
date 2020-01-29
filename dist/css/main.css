@@ -1,3 +1,11 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
+
 * {
   box-sizing: border-box; }
 
@@ -53,15 +61,18 @@ a {
   right: 2.2rem;
   top: 2.2rem;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 2s infinite; }
   .menu-btn .btn-line {
     width: 1.75rem;
     height: 0.18rem;
     margin: 0 0 0.31rem 0;
-    background: #fff;
+    background: #eece1a;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    animation: none; }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
